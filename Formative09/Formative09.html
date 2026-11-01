@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
+    <title>MIS362 Formative09</title>
+</head>
+
+<body class="container-fluid">
+
+    <form class="container-fluid"
+        action="https://eprofessor.azurewebsites.net/codex/ProcessAICall.aspx"
+        method="post"
+        name="frmAssignment"
+        id="frmAssignment">
+
+        <input name="InstID" id="InstID" value="00617282" type="hidden">
+        <input name="assignmentVersion" id="assignmentVersion" value="Formative09-FA2026-v2" type="hidden">
+
+        <textarea id="datasetContext"
+                  name="datasetContext"
+                  readonly
+                  hidden>Assignment: MIS362 Formative09 — SmartBean Business Intelligence and Analytics Foundations. The workbook uses the same 1,200-record SmartBean_SalesData.csv file used in Summative09. Worksheets are 0-StartHere, 1-RawSales, 2-LookupPractice, 3-AnalysisMethods, 4-StudentAnalysis, and Reference. The introductory section asks students to review record count, duplicate Transaction IDs, missing CustomerType values, and StoreLocation spacing issues, and to define a useful management question. There is no separate webpage answer for the introductory data-quality review. Students then use XLOOKUP and VLOOKUP to combine transaction and master data, choose among Sort/Filter with SUBTOTAL, SUMIFS/COUNTIFS, PivotTable/PivotChart, or another valid Excel method, identify an important SmartBean pattern, verify the result, and recommend a management action while recognizing an important limitation. Students complete and verify the detailed workbook analysis. Webpage answers should be brief and should state the essential conclusion and strongest supporting reason. The AI does not receive the workbook. Do not require students to reproduce formulas, lookup tables, summaries, PivotTables, charts, or all calculated values unless the question specifically asks for them. Do not penalize concise answers when the conclusion is clear, relevant, and consistent with the assignment. Accept alternative valid Excel methods and reasonable conclusions when supported. Evaluate lookup and data-enrichment reasoning, analytical interpretation, evidence, verification, business relevance, recommendation quality, and recognition that a pattern or correlation does not by itself prove causation.</textarea>
+
+        <h1 class="text-center">SmartBean Business Intelligence and Analytics Foundations</h1>
+
+        <h2 id="student-info" class="sr-only">Student Information</h2>
+        <div class="row" aria-labelledby="student-info">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="FirstName">First Name:</label>
+                    <input class="form-control" name="FirstName" id="FirstName" type="text"
+                        readonly aria-readonly="true" autocomplete="given-name">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="LastName">Last Name:</label>
+                    <input class="form-control" name="LastName" id="LastName" type="text"
+                        readonly aria-readonly="true" autocomplete="family-name">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="StarID">StarID:</label>
+                    <input class="form-control" name="StarID" id="StarID" type="text"
+                        readonly aria-readonly="true" autocomplete="username">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-control" name="email" id="email" type="email"
+                        readonly aria-readonly="true" autocomplete="email">
+                </div>
+            </div>
+        </div>
+
+        <input name="pin" id="pin" type="hidden">
+
+        <h2 id="course-info" class="sr-only">Course Information</h2>
+        <div class="row" aria-labelledby="course-info">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Semester">Semester:</label>
+                    <input class="form-control" name="Semester" id="Semester" type="text"
+                        readonly aria-readonly="true">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Class">Class:</label>
+                    <input class="form-control" name="Class" id="Class" type="text"
+                        readonly aria-readonly="true">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="Section">Section:</label>
+                    <input class="form-control" name="Section" id="Section" type="text"
+                        readonly aria-readonly="true">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="assignment">Assignment:</label>
+                    <input class="form-control" name="assignment" id="assignment" type="text"
+                        value="Formative09" readonly aria-readonly="true">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <br>
+            <input class="btn btn-danger btn-block btn-lg" name="Submit"
+                value="Submit to the web database, and receive AI feedback" type="submit">
+            <br>
+        </div>
+
+        <div class="col-lg-12 h3 text-danger">
+            150 Points
+            <hr>
+        </div>
+
+        
+        <!-- ========== Hermes Agent Work Context ========== -->
+        <div class="col-lg-12">
+            <a href="#HermesWorkContext" class="btn btn-info" data-toggle="collapse" aria-expanded="true" aria-controls="HermesWorkContext">Hermes Agent Work Context</a>
+        </div>
+        <div id="HermesWorkContext" class="collapse in col-lg-12">
+            <p><strong>Active profile:</strong> use your course-specific Hermes profile <code>mis362</code>.</p>
+            <p><strong>Hermes session:</strong></p>
+            <pre>First use:  /new Formative09
+Return later: /resume Formative09
+When finished using Hermes: /quit</pre>
+            <p><strong>Hermes is the default AI-assisted workflow for MIS362, but Direct Mode is allowed for routine steps when you already understand the task and agent assistance would add no meaningful value.</strong> Resume Hermes when you need explanation, planning, troubleshooting, alternatives, review, or verification.</p>
+            <p><strong>Direct Mode:</strong> Work directly in the required course software and verify the result yourself. Choosing not to use Hermes for a routine step is acceptable unless an assignment explicitly requires it.</p>
+            <p><strong>Suggested Hermes checkpoint:</strong> Ask Hermes to help turn one management question into an analysis plan before you work in Excel. Verify the final numbers and charts from the workbook rather than accepting the agent response as evidence.</p>
+            <p>Hermes is a coach. It may explain concepts, suggest formulas or methods, and help troubleshoot, but you must perform and verify the hands-on work in the required software. No extra Hermes screenshot or chat transcript is required.</p>
+            <p><strong>Workstation tip:</strong> when useful, keep Hermes Agent open on one monitor and the assignment, browser, Excel, Visual Studio, Access, or other course software on another monitor so you can compare instructions, agent advice, and actual results.</p>
+            <p><strong>Safety and verification:</strong> use only Hermes capabilities you have already configured in the completed GenAI assignments. Do not place passwords, API keys, private information, or restricted data in prompts or course-agent files. Treat agent output as a candidate solution until you verify it with the assignment requirements, source data, calculations, software output, or another appropriate source.</p>
+            <hr />
+        </div>
+
+<div class="col-lg-12">
+            <a href="#Objectives" class="btn btn-info" data-toggle="collapse">Learning Objectives</a>
+        </div>
+        <div id="Objectives" class="collapse in col-lg-12">
+            <p>
+                In this assignment, you will use the same SmartBean sales data used later in Summative09 to practice a complete introductory BI and analytics workflow.
+            </p>
+            <p>After completing this assignment, you will be able to:</p>
+            <ol>
+                <li>Recognize data-quality problems that can distort analysis.</li>
+                <li>Use XLOOKUP and VLOOKUP to combine transaction and master data.</li>
+                <li>Select and use an appropriate Excel analysis method.</li>
+                <li>Interpret and verify an important business pattern.</li>
+                <li>Make a supported recommendation while identifying an important limitation.</li>
+            </ol>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#Resources" class="btn btn-info" data-toggle="collapse">Resources and Help</a>
+        </div>
+        <div id="Resources" class="collapse in col-lg-12">
+            <p>
+                Suggested Hermes prompt (use the <code>mis362</code> profile; the MIS362 course agent remains available as a secondary resource):
+                <br>
+                <code>I am completing MIS362 Formative09. Help me understand the SmartBean management question first. Then explain a simple Excel method and an alternative method. You may provide exact XLOOKUP, VLOOKUP, SUBTOTAL, SUMIFS, or COUNTIFS formulas, but explain how to verify the result and avoid overstating what the data proves.</code>
+            </p>
+            <p>
+                You may choose among Sort/Filter with SUBTOTAL, SUMIFS/COUNTIFS, PivotTable/PivotChart, or another valid Excel method. The workbook provides sample solutions using the three main methods.
+            </p>
+            <p>
+                The AI does not receive your workbook. Complete and verify the detailed Excel analysis, then submit only the essential conclusion and strongest supporting reason for each question.
+            </p>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#Overview" class="btn btn-info" data-toggle="collapse">Assignment Overview</a>
+        </div>
+        <div id="Overview" class="collapse in col-lg-12">
+            <p>
+                Business intelligence and analytics turn transaction data into useful summaries, patterns, visualizations, and decisions. The process begins with a clear management question and trustworthy data—not with a chart.
+            </p>
+            <p>
+                Download and open <a href="Formative09_SmartBean_BI_Analytics.xlsx" class="bg-info text-white">Formative09_SmartBean_BI_Analytics.xlsx</a>. Save a working copy as <strong>Formative09.xlsx</strong>.
+            </p>
+            <p>
+                The workbook contains the same 1,200 records from <a href="SmartBean_SalesData.csv" class="bg-info text-white">SmartBean_SalesData.csv</a> used in Summative09. Using the same data lets you practice the tools now and apply them more independently later.
+            </p>
+            <p>
+                Detailed work belongs in the workbook. The three webpage answers should remain brief and communicate the conclusions that resulted from the analysis.
+            </p>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#Introduction" class="btn btn-info" data-toggle="collapse">Introduction — Data Quality and Management Questions</a>
+        </div>
+        <div id="Introduction" class="collapse in col-lg-12">
+            <ol>
+                <li>Open <strong>0-StartHere</strong> and <strong>1-RawSales</strong>.</li>
+                <li>Review the record count, duplicate Transaction IDs, missing CustomerType values, and StoreLocation spacing issues.</li>
+                <li>Use the helper columns and table filters to inspect at least one example of each issue.</li>
+                <li>Review the sample management questions and enter one useful practice question in the workbook.</li>
+                <li>Remember that incorrect or inconsistent data can produce a convincing but misleading summary or chart.</li>
+            </ol>
+            <p>
+                The lookup, analysis, and recommendation exercises depend on trustworthy data and a clear question.
+            </p>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#Exercise01" class="btn btn-info" data-toggle="collapse">Exercise 1 — Lookup and Data Enrichment</a>
+        </div>
+        <div id="Exercise01" class="collapse in col-lg-12">
+            <ol>
+                <li>Open <strong>2-LookupPractice</strong>.</li>
+                <li>Review the example XLOOKUP and VLOOKUP formulas in the first transaction row.</li>
+                <li>Fill the formulas down through the remaining practice transactions.</li>
+                <li>Verify that ProductCategory and StoreLocation match the master tables.</li>
+                <li>Compare the modern XLOOKUP structure with the VLOOKUP structure commonly found in older workbooks.</li>
+            </ol>
+
+            <div class="form-group">
+                <label for="q1"><strong>1. (30) Question 1</strong></label>
+                <textarea class="form-control" id="q1" name="q1" rows="7" readonly aria-readonly="true">Using the 2-LookupPractice worksheet, verify that the transaction records were combined with product and store master data. Briefly explain the most important analytical benefit of enriching transaction data with master data.</textarea>
+                <br>
+                <label for="a1"><strong>Your brief answer:</strong></label>
+                <textarea class="form-control" id="a1" name="a1" rows="5" maxlength="1500" placeholder="State the main benefit and strongest supporting reason..."></textarea>
+                <small id="charCount-a1" class="text-muted">0 / 1500 characters</small>
+            </div>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#Exercise02" class="btn btn-info" data-toggle="collapse">Exercise 2 — Analysis and Visualization</a>
+        </div>
+        <div id="Exercise02" class="collapse in col-lg-12">
+            <ol>
+                <li>Open <strong>3-AnalysisMethods</strong> and review the sample solutions.</li>
+                <li>Choose Sort/Filter with SUBTOTAL, SUMIFS/COUNTIFS, PivotTable/PivotChart, or another valid Excel method.</li>
+                <li>Use <strong>4-StudentAnalysis</strong> to analyze a useful management question.</li>
+                <li>Create or review a summary, KPI, or chart that supports the conclusion.</li>
+                <li>Verify at least one result using a second method or the filtered source data.</li>
+            </ol>
+
+            <div class="form-group">
+                <label for="q2"><strong>2. (30) Question 2</strong></label>
+                <textarea class="form-control" id="q2" name="q2" rows="7" readonly aria-readonly="true">Using the SmartBean dataset and your selected Excel method, briefly identify the most important business pattern shown by your analysis and state the strongest evidence supporting that conclusion.</textarea>
+                <br>
+                <label for="a2"><strong>Your brief answer:</strong></label>
+                <textarea class="form-control" id="a2" name="a2" rows="5" maxlength="1500" placeholder="State the pattern and strongest supporting evidence..."></textarea>
+                <small id="charCount-a2" class="text-muted">0 / 1500 characters</small>
+            </div>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#Exercise03" class="btn btn-info" data-toggle="collapse">Exercise 3 — Decision and Verification</a>
+        </div>
+        <div id="Exercise03" class="collapse in col-lg-12">
+            <ol>
+                <li>Review the analysis, summary, or chart you created.</li>
+                <li>Identify one action SmartBean management should consider.</li>
+                <li>Review how you verified the result.</li>
+                <li>Identify one limitation, missing variable, or alternative explanation.</li>
+                <li>Do not claim that a correlation or visible pattern proves its cause.</li>
+            </ol>
+
+            <div class="form-group">
+                <label for="q3"><strong>3. (30) Question 3</strong></label>
+                <textarea class="form-control" id="q3" name="q3" rows="8" readonly aria-readonly="true">Using the 4-StudentAnalysis worksheet, briefly recommend one action for SmartBean and identify the most important verification step or limitation management should consider before acting.</textarea>
+                <br>
+                <label for="a3"><strong>Your brief answer:</strong></label>
+                <textarea class="form-control" id="a3" name="a3" rows="5" maxlength="1500" placeholder="State one recommended action and one verification step or limitation..."></textarea>
+                <small id="charCount-a3" class="text-muted">0 / 1500 characters</small>
+            </div>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#Evidence" class="btn btn-info" data-toggle="collapse">Completion Evidence</a>
+        </div>
+        <div id="Evidence" class="collapse in col-lg-12">
+            <p>Before submitting, confirm that the workbook visibly shows:</p>
+            <ul>
+                <li>review of the introductory data-quality checks and a useful management question;</li>
+                <li>completed XLOOKUP and VLOOKUP practice;</li>
+                <li>a selected analysis method and supporting summary or visualization;</li>
+                <li>verification using a second method or filtered source data;</li>
+                <li>a supported recommendation and an important limitation;</li>
+                <li>no unexpected formula errors such as <code>#DIV/0!</code>, <code>#VALUE!</code>, <code>#REF!</code>, or <code>#NAME?</code>.</li>
+            </ul>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#D2LSubmission" class="btn btn-info" data-toggle="collapse">D2L Workbook Submission</a>
+        </div>
+        <div id="D2LSubmission" class="collapse in col-lg-12">
+            <p><strong>(60)</strong> Save and upload <strong>Formative09.xlsx</strong> to the D2L <code>Formative09</code> assignment folder.</p>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <a href="#WebSubmission" class="btn btn-info" data-toggle="collapse">Webpage Submission</a>
+        </div>
+        <div id="WebSubmission" class="collapse in col-lg-12">
+            <p><strong>Required:</strong> Verify that this assignment is linked from your course home page.</p>
+            <p><strong>Required:</strong> Press the Submit button at the top or bottom of this page.</p>
+            <p>
+                Complete and verify the workbook analysis. Your webpage answers should contain only the essential conclusion and strongest supporting reason.
+            </p>
+            <p>
+                Review the AI feedback, correct the workbook or answers as needed, and resubmit before the deadline.
+            </p>
+            <hr>
+        </div>
+
+        <div class="col-lg-12">
+            <br>
+            <input class="btn btn-danger btn-block btn-lg" name="Submit"
+                value="Submit to the web database, and receive AI feedback" type="submit">
+            <br>
+        </div>
+
+    </form>
+
+    <footer>
+        <div id="licenseInfo" class="col-lg-12 text-muted"></div>
+        <div id="footerText" class="col-lg-12 text-muted"></div>
+    </footer>
+
+    <script src="../../ReadOnly/jquery-1.js"></script>
+    <script src="../../ReadOnly/bootstrap.js"></script>
+    <script src="../studentConstants.js"></script>
+    <script src="../../ReadOnly/courseConstants.js"></script>
+    <script src="../../ReadOnly/domForms.js"></script>
+
+    <script>
+    (function () {
+        function updateCount(id, max) {
+            var box = document.getElementById(id);
+            var count = document.getElementById('charCount-' + id);
+            if (!box || !count) { return; }
+            count.textContent = box.value.length + ' / ' + max + ' characters';
+        }
+
+        for (var i = 1; i <= 3; i++) {
+            (function (id) {
+                var box = document.getElementById(id);
+                if (!box) { return; }
+                var max = parseInt(box.getAttribute('maxlength'), 10) || 1500;
+                updateCount(id, max);
+                box.addEventListener('input', function () {
+                    updateCount(id, max);
+                });
+            })('a' + i);
+        }
+    })();
+    </script>
+
+</body>
+</html>
