@@ -1,0 +1,5 @@
+SmartBean_SalesSample.csv is a separate synthetic training dataset, not the larger Summative09 dataset. Do not compare totals across those two files.
+Date: ISO date. Location: simulated training branch. Product/Category: labels.
+Units: count sold on the row. UnitPrice: dollars per unit. Discount: total dollars discounted on the row, NOT a per-unit amount. NetSales: Units * UnitPrice - Discount, in dollars.
+Each row is an aggregate product/location/date observation, not an individual customer or transaction. There are 30 observations; row count is not transaction count.
+The file does not provide costs, profit, individual customers, seating utilization, or reliable future demand. Do not infer these from sales totals alone.

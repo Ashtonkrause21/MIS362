@@ -1,0 +1,6 @@
+Pilot boundaries — all workflows
+Use only supplied fictional inputs and independently checked earlier evidence.
+Separate LIVE, REUSED, and TABLETOP evidence, with filename/test ID and actual result.
+Drafts and advisory queues require human review. No sending, refunds, record changes, leases, or financial commitments.
+Use only named files; explicitly request source reads. Record missing evidence instead of inventing it.
+Student-written instructions do not create a technical sandbox. Review before saving the named output.
